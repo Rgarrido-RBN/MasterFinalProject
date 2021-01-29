@@ -1,6 +1,6 @@
 # Coral TPU installation guide for RPI4 running Ubuntu Mate 20.04
 
-This is the instalation process I used for preparing and testing a Raspberry Pi 4 running Ubuntu Mate 20.04 using the Coral TPU USB accelerator for computer vision aplications. **The following guide is based on the tutorial provided by Edje Electronics** available on https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.mdso. So the very firs step will be navegate until the wanted route of your device and make al git clone of this project.
+This is the instalation process I used for preparing and testing a Raspberry Pi 4 running Ubuntu Mate 20.04 using the Coral TPU USB accelerator for computer vision aplications. **The following guide is based on the tutorial provided by Edje Electronics** available on https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi/blob/master/Raspberry_Pi_Guide.mdso. So the very firs step will be navegate until the path you want to locate the project on your device and make a git clone of this project.
 
 `git clone https://github.com/EdjeElectronics/TensorFlow-Lite-Object-Detection-on-Android-and-Raspberry-Pi.git`
 
