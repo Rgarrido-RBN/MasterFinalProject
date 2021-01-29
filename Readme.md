@@ -2,7 +2,7 @@
 
 Hi there! My name is Rubén and I'm an Electronics Engineer based in Valencia. Actually I'm coursing the Electronics Engineer Master of Universitat de València and the purpose of this repository is to have a place where I could upload my work allong the project.
 
-The project will be based on Computer Vision and Robots applications using ROS to manage the robot.
+The project will be based on Computer Vision and Robotics applications using ROS to manage the robot.
 
 From now, this is a little list of the Hardware i use, I will update it as soon as i progress on this project.
 
