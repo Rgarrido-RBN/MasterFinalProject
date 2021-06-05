@@ -4,7 +4,7 @@
 #define ENCODER_CHANNEL_B 5
 #define BUFFERSIZE 20
 
-SoftwareSerial RPISerial(1, 2); // RX, TX 
+SoftwareSerial RPISerial(19, 18); // RX, TX 
 
 volatile unsigned long encoderPulse = 0;
 volatile long direction = 1;
@@ -24,31 +24,14 @@ void setup()
 void loop()
 {
   long speed = encoderPulse/2400.00*60;
-  Serial.println(direction*speed);
+  // Serial.println(direction*speed);
   encoderPulse = 0; 
   delay(1000);
 
-  Serial.println("Opening the communication");
-  long setime = millis();
-  RPISerial.write("message");
-
-  char rfidData[BUFFERSIZE];  
-  rfidData[0] = 0;
-  char offset = 0;      
-
-  while (RPISerial.available()) 
-  {
-    byte C = RPISerial.read();
-    rfidData[offset] = C;
-    offset++;
-    Serial.print(C);
-  }
-
-  if(offset == 17)
-  {
-    Serial.println(" ");
-    Serial.println(rfidData);
-  }
+  RPISerial.write("hello\n");
+  // if (RPISerial.available())
+  Serial.println(RPISerial.read());
+  // if (Serial.available())
 }
 
 void encoderISRChannelA()
