@@ -1,19 +1,10 @@
-# import serial
-# from time import sleep
-
-# ser = serial.Serial ("/dev/ttyS0", 11520)    #Open port with baud rate
-# while True:
-#     received_data = ser.read()              #read serial port
-#     sleep(0.03)
-#     data_left = ser.inWaiting()             #check for remaining byte
-#     received_data += ser.read(data_left)
-#     print (received_data)                   #print received data
-#     ser.write(received_data)                #transmit data serially
 import serial
+from time import sleep
 
-serialport = serial.Serial("serial0", baudrate=115200, timeout=3.0)
-
+ser = serial.Serial ("/dev/ttyS0", 115200, timeout=1.0)
 while True:
-    serialport.write("rnSay something:")
-    rcv = port.read(10)
-    serialport.write("rnYou sent:" + repr(rcv))
+    received_data = ser.readline()
+    print (received_data)
+    # ser.write(bytes(received_data))
+    # ser.write(b"sending string to Arduino\n")
+    sleep(0.01)
