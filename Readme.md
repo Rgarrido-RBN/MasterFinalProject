@@ -6,17 +6,20 @@ The project will be based on Computer Vision and Robotics applications using ROS
 
 *Directory tree of the repository:*
 
-├── arduinoShieldMain
-│   ├── arduinoShieldMain.ino
-│   └── encoderReports.ino
-├── Configuring_Ubuntu_Headless_mode.md
-├── get_pi_requirements_RPI4_MATE.sh
-├── Readme.md
-├── RPIUartCommunication.py
-└── setting_up_coralTPU.md
+    ├── arduinoShieldMain
+    │   ├── arduinoShieldMain.ino
+    │   └── encoderReports.ino
+    ├── Configuring_Ubuntu_Headless_mode.md
+    ├── get_pi_requirements_RPI4_MATE.sh
+    ├── Readme.md
+    ├── RPIUartCommunication.py
+    └── setting_up_coralTPU.md
 
 ## *Branches content:*
 
 Master: Fully tested code.
+
 Develop: code in progress/developing new features.
+
+email: rgarrido.rbn@gmail.com
   
